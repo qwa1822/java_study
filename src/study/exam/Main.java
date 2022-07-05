@@ -1,15 +1,28 @@
 package study.exam;
 
+import java.util.Scanner;
+
+
+
+class Data{
+    int x;
+}
 public class Main {
     public static void main(String[] args) {
 
-        int num=12345;
-        int sum=0;
+    Data d=new Data();
+    d.x=10;
+        System.out.println("main() : x"+d.x);
 
-        while(num!=0){
-            sum+=num%10;
-            num/=10;
-        }
-        System.out.println(sum);
+        change(d.x);
+        System.out.println("After change(d.x)");
+        System.out.println("main() x="+d.x);
+
+    }
+
+
+    static void change(int x){
+        x=1000;
+        System.out.println("change() : x"+x);
     }
 }

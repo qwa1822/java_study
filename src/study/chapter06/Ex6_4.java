@@ -14,7 +14,7 @@ public class Ex6_4 {
         System.out.println("add(5L,3L)= "+result);
         System.out.println("substract(5L,3L)="+result2);
         System.out.println("multiply(5L,3L)="+result3);
-        System.out.println("divide(5L,3L)="+reuslt4);
+        System.out.println("divide(5L,3L)="+ reuslt4);
 
 
     }
