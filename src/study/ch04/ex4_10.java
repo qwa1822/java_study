@@ -5,9 +5,11 @@ public class ex4_10 {
 
         int sum=0;
 
-        for(int i=1; i<=5; i++){
-            sum+=i;
-            System.out.printf("1부터 %2d까지의 합%2d\n",i,sum);
+        for(int i=2; i<=9; i++){
+            for(int j=1; j<=9; j++){
+                System.out.println(i+"*"+j+"="+(i*j));
+            }
+            System.out.println();
         }
     }
 }

@@ -28,7 +28,6 @@ public class Ex09 {
 
 
 
-        //EX
 
         int answer=0;
 
