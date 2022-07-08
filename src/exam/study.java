@@ -33,12 +33,22 @@ class Computer extends  Product{
     }
 }
 
+class Audio2 extends Product{
+    Audio2(){
+        super(50);
+    }
+    public String toString(){
+        return "Audio";
+    }
+}
+
 
 class buy{
     int money=10000;
     int bonusPoint=0;
 
-
+    Product p[]=new Product[20];
+    int i=0;
     void Buyer(Product d){
 
         if(d.price>money){
@@ -48,12 +58,15 @@ class buy{
 
         money-=d.price;
         bonusPoint+=d.bonusPoint;
+        p[i++]=d;
+
         System.out.println(d+"를 구입하셨습니다.");
 
         
         
     }
 }
+
 
 
 public class study {
